@@ -1,0 +1,26 @@
+{
+  "name": "hello-nar",
+  "version": "1.0.0",
+  "description": "A CLI binary example.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jason Dusek <jason.dusek@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "nar": "^0.3.20"
+  },
+  "archive": {
+    "binary": true,
+    "dependencies": true,
+    "peerDependencies": true,
+    "devDependencies": false,
+    "globalDependencies": [],
+    "patterns": ["**", "!test/**"]
+  },
+  "scripts": {
+    "start": "node index.js",
+    "nar": "nar"
+  }
+}
